@@ -10,7 +10,11 @@ def get_video_id(video_link):
         video id
     """
 
-    video_link_split = video_link.split("=")
-    video_id = video_link_split[1]
+    try: 
+        video_link_split = video_link.split("=")
+        video_id = video_link_split[1]
+
+    except Exception as e:
+        print(f"Error in getting video id {e}")
 
     return video_id

@@ -9,3 +9,6 @@ from .get_video_id import get_video_id
 
 # Checks if the youtube link is valid 
 from .valid_youtube_link import is_link_valid
+
+# Get YouTube Video Transcripts 
+from .get_transcript import get_video_trascript

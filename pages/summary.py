@@ -4,6 +4,7 @@ from utils import display_sidebar_links
 from utils import generate_summary
 from utils import get_video_id
 from utils import is_link_valid
+from utils import get_video_trascript
 
 
 # Displaying sidebar links
@@ -19,7 +20,11 @@ with st.form("my-form"):
     if submitted: 
         if is_link_valid(video_link): 
             video_id = get_video_id(video_link)
-            st.write(video_id)
+            _, transcript_text = get_video_trascript(video_id)
+            summary = generate_summary(transcript_text)
+            print(summary)
+            st.write(summary)
+
         else:
             st.warning("Enter valid YouTube Link")
     
