@@ -1,4 +1,6 @@
 import streamlit as st
+from streamlit_player import st_player
+
 
 from utils import display_sidebar_links
 from utils import generate_summary
@@ -22,7 +24,8 @@ with st.form("my-form"):
             video_id = get_video_id(video_link)
             _, transcript_text = get_video_trascript(video_id)
             summary = generate_summary(transcript_text)
-            print(summary)
+            st_player(video_link)
+            st.header("Summary: ")
             st.write(summary)
 
         else:
