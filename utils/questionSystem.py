@@ -8,8 +8,6 @@ load_dotenv()
 
 genai.configure(api_key=os.getenv("GOOGLE_GEMINI_API"))
 
-
-
 def generate_answer(question, transcript_text):
     """
     Description:

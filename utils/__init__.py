@@ -15,3 +15,9 @@ from .get_transcript import get_video_trascript
 
 # Generate answers given from transcripts
 from .questionSystem import generate_answer
+
+# Get timestamps in the transcript from the question
+from .get_timestamp import get_timestamps
+
+# Process transcripts and convert them into a string
+from .process_transcripts import process_transcript

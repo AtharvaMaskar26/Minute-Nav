@@ -6,6 +6,8 @@ from utils import generate_answer
 from utils import get_video_id
 from utils import is_link_valid
 from utils import get_video_trascript
+from utils import process_transcript
+from utils import get_timestamps
 
 display_sidebar_links()
 
@@ -31,7 +33,13 @@ with st.form("my-form"):
             answer = generate_answer(question, transcript_text)
 
             st.write(answer)
-            
+
+            processesed_transcript = process_transcript(transcript)
+            timestamps = get_timestamps(processesed_transcript, question)
+
+            st.write(timestamps)
+
+
 
     else:
         st.warning("Enter valid YouTube link")
