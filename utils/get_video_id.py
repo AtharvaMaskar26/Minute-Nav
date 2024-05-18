@@ -4,10 +4,10 @@ def get_video_id(video_link):
         This functions takes the video link, splits it and returns the video id
 
     parameters: 
-        video link
+        video link (str): Link of the youtube video 
 
     returns: 
-        video id
+        video id (str): id of the given video 
     """
 
     try: 

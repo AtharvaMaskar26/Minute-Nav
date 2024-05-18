@@ -12,3 +12,6 @@ from .valid_youtube_link import is_link_valid
 
 # Get YouTube Video Transcripts 
 from .get_transcript import get_video_trascript
+
+# Generate answers given from transcripts
+from .questionSystem import generate_answer

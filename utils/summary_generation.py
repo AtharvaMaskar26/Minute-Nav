@@ -24,8 +24,8 @@ def generate_summary(transcript_text):
     
     try:
         model = genai.GenerativeModel("gemini-pro")
-        respone = model.generate_content(prompt + transcript_text)
+        response = model.generate_content(prompt + transcript_text)
     except Exception as e: 
         print(f"Error generating summary: {e}")
 
-    return respone.text
+    return response.text
