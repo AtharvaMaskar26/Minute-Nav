@@ -1,7 +1,3 @@
-﻿Here's a README file for your Minute Nav project:
-
----
-
 # Minute Nav
 
 Minute Nav is a YouTube tool designed to enhance your YouTube experience with various features. Built using Python, Streamlit, and GeminiAI, Minute Nav helps you interact with YouTube videos more effectively.
